@@ -9,9 +9,10 @@
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
+	binary_tree_t *new;
+
 	if (!node || !node->parent)
 		return (NULL);
-	binary_tree_t *new;
 
 	new = node->parent;
 
